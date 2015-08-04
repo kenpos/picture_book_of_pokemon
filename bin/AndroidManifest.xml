@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kenpos.app.picture_books_pokemon_pro"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <!-- AppC Core Setting Start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- AppC Core Setting End -->
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pokemonserch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Start"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+ <activity
+            android:name="com.kenpos.app.menu.MenuActivity"
+            android:label="メニュー" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.title"
+            android:label="タイトル画面">
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Waza_serch"
+            android:label="技一覧" >
+        </activity>
+         <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Status_Cheack"
+            android:label="ステータス判定" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Waza_result"
+            android:label="検索結果" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Tokusei_serch"
+            android:label="特性検索" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.syuzokuti_result"
+            android:label="検索結果" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.tokusei_result"
+            android:label="特性検索結果" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.mure_buttle"
+            android:label="群れバトル" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.egg_result"
+            android:label="タマゴ検索結果" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.seikakuitiranhyou"
+            android:label="性格一覧表" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pro_pokemon_Fragment.MainActivity"
+            android:label="ポケモン検索結果"
+             >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.TYPE_serch"
+            android:label="タイプ検索" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.syuzokuti_serch"
+            android:label="種族値検索" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pro_pokemon_Fragment.Status_Fragment"
+            android:label="ステータス" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.HelloSqliteActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.kotaiti_Cheack"
+            android:label="個体値判定" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Speed_Cheack"
+            android:label="スピード調整">
+        </activity>
+             <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Speed_cheack2"
+            android:label="スピード調整">
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Memo_Activity"
+            android:label="育成ポケモン登録">
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.Memo_result"
+            android:label="育成ポケモン閲覧">
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.item_serch"
+            android:label="アイテム検索" >
+        </activity>
+        <activity
+            android:name="com.kenpos.app.picture_books_pokemon_pro.item_result"
+            android:label="アイテム検索結果" >
+        </activity>
+        <activity
+            android:name="net.adcrops.sdk.activity.AdcDetailActivity"
+            android:label="アイテム検索結果" >
+        </activity>
+    </application>
+<meta-data android:name="ADC_MEDIA_SITE_ID" android:value="3001" />
+<meta-data android:name="ADC_MEDIA_SITE_KEY" android:value="VzygzHxC" />
+</manifest>

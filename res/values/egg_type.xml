@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="egg">
+     <item>""</item>
+         <item>"かいじゅう"</item>
+         <item>"すいちゅう1"</item>
+         <item>"すいちゅう2"</item>
+         <item>"すいちゅう3"</item>
+         <item>"しょくぶつ"</item>
+         <item>"メタモン"</item>
+         <item>"こうぶつ"</item>
+         <item>"ドラゴン"</item>
+         <item>"むし"</item>
+         <item>"ひこう"</item>
+         <item>"みはっけん"</item>
+         <item>"りくじょう"</item>
+         <item>"ようせい"</item>
+         <item>"ふていけい"</item>
+         <item>"ひとがた"</item>
+ </string-array>
+    
+</resources>

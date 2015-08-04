@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="メモ登録"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff8f77" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="貴方の育てたポケモン、育てたいポケモンをメモしていきましょう。"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="ポケモン名"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_SPE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_marginBottom="3dp"
+        android:layout_alignRight="@+id/kotaiti_SDEF" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="2dp"
+        android:layout_toLeftOf="@+id/seikaku" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/level"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/textView" />
+
+    <!-- XMLレイアウトで実装 -->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="データベースに詰め込んじゃうううううらめぇえええ"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_ATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="0"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignLeft="@+id/kotaiti_HP"
+        android:layout_alignRight="@+id/kotaiti_HP" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_DEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="0"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignLeft="@+id/kotaiti_SATK"
+        android:layout_alignRight="@+id/kotaiti_ATK">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_SATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toRightOf="@+id/textView9"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="0"
+        android:layout_alignRight="@+id/kotaiti_ATK" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_SDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="0"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/kotaiti_SATK"
+        android:layout_alignRight="@+id/kotaiti_SATK" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kotaiti_SPE"
+        android:layout_alignLeft="@+id/AutoCompleteTextView01"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/TextView02"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="　" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotaiti_ATK"
+        android:layout_toLeftOf="@+id/kotaiti_ATK"
+        android:text="防御"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotaiti_DEF"
+        android:layout_toLeftOf="@+id/kotaiti_SATK"
+        android:text="特攻"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotaiti_SATK"
+        android:layout_toLeftOf="@+id/kotaiti_SDEF"
+        android:text="特防"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:text="素早"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotaiti_HP"
+        android:layout_toLeftOf="@+id/kotaiti_ATK"
+        android:text="攻撃"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pokemon_name"
+        android:layout_toRightOf="@+id/space2"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:hint="ニックネーム" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/TextView01"
+        android:text="HP"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/pokemon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/TextView09"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:hint="ポケモン名" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pokemon_name"
+        android:layout_below="@+id/pokemon_name"
+        android:text="せいかく"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/EditText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText02"
+        android:layout_alignRight="@+id/EditText02"
+        android:layout_below="@+id/TextView07"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/tokusei"
+        android:hint="とくせい" />
+
+    <EditText android:inputType="text"
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/AutoCompleteTextView04"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text=""
+        android:hint="ボックス名"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/EditText03"
+        android:text="保存ボックス"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/space"
+        android:layout_below="@+id/level"
+        android:text="努力値"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/Spinner01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignLeft="@+id/EditText03"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/seikaku" 
+        android:hint="どうぐ"/>
+
+    <EditText android:inputType="text"
+        android:id="@+id/kotaiti_HP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:text="0" />
+
+    <Spinner
+        android:id="@+id/seikaku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/pokemon_name"
+        android:layout_alignTop="@+id/space"
+        android:background="@drawable/waku"
+        android:entries="@array/seikaku"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/space2"
+        android:text="ニックネーム"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/AutoCompleteTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView06"
+        android:layout_toRightOf="@+id/TextView04"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/waza" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kotaiti_HP"
+        android:layout_alignBottom="@+id/kotaiti_HP"
+        android:layout_alignRight="@+id/TextView09"
+        android:text="技1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space2"
+        android:layout_toLeftOf="@+id/AutoCompleteTextView04"
+        android:text="技構成"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kotaiti_SATK"
+        android:layout_toLeftOf="@+id/AutoCompleteTextView02"
+        android:text="技4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/AutoCompleteTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView03"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/waza" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AutoCompleteTextView03"
+        android:layout_toLeftOf="@+id/AutoCompleteTextView03"
+        android:text="技2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/AutoCompleteTextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AutoCompleteTextView02"
+        android:layout_toRightOf="@+id/TextView04"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/waza" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kotaiti_SDEF"
+        android:layout_alignRight="@+id/TextView03"
+        android:text="コメント"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView android:inputType="text"
+        android:id="@+id/AutoCompleteTextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignRight="@+id/AutoCompleteTextView03"
+        android:layout_toRightOf="@+id/TextView04"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:entries="@array/waza" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AutoCompleteTextView02"
+        android:layout_alignBottom="@+id/AutoCompleteTextView02"
+        android:layout_toLeftOf="@+id/TextView08"
+        android:text="技3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space"
+        android:layout_alignLeft="@+id/TextView08"
+        android:text="特性"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/level"
+        android:text="道具"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+                   android:clickable="true"
+        	android:onClick="jump"
+        android:text="結果画面へ"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

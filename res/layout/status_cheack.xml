@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="ステータス判定"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff8f77" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="個体値や努力値などからステータスをはじき出します"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ポケモン名"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="せいかく"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="レベル"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toLeftOf="@+id/level"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="個体値"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="努力値"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="攻撃"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="防御"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特攻"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特防"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="素早"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView11"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_marginTop="6dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_HP"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_above="@+id/kotaiti_ATK"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_ATK"
+        android:layout_alignRight="@+id/kotaiti_HP"
+        android:layout_alignLeft="@+id/kotaiti_HP"
+        android:layout_alignTop="@+id/textView8"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_above="@+id/kotaiti_DEF"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_DEF"
+        android:layout_alignRight="@+id/kotaiti_ATK"
+        android:layout_alignLeft="@+id/kotaiti_ATK"
+        android:layout_alignTop="@+id/textView9"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_above="@+id/kotaiti_SATK"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_SATK"
+        android:layout_alignLeft="@+id/kotaiti_DEF"
+        android:layout_alignRight="@+id/kotaiti_DEF"
+        android:layout_alignTop="@+id/textView10"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_above="@+id/kotaiti_SDEF"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_SDEF"
+        android:layout_alignRight="@+id/kotaiti_SATK"
+        android:layout_alignLeft="@+id/kotaiti_SATK"
+        android:layout_alignTop="@+id/textView11"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_above="@+id/kotaiti_SPE"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotaiti_SPE"
+        android:layout_alignLeft="@+id/kotaiti_SDEF"
+        android:layout_alignRight="@+id/kotaiti_SDEF"
+        android:layout_alignTop="@+id/textView12"
+        android:background="@drawable/waku"
+        android:text="31"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:id="@+id/doryokuti_HP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_above="@+id/doryokuti_ATK"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doryokuti_ATK"
+        android:layout_alignLeft="@+id/doryokuti_HP"
+        android:layout_alignBottom="@+id/kotaiti_ATK"
+        android:layout_alignRight="@+id/doryokuti_HP"
+        android:layout_alignTop="@+id/kotaiti_ATK"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doryokuti_DEF"
+        android:layout_alignLeft="@+id/doryokuti_ATK"
+        android:layout_alignRight="@+id/doryokuti_ATK"
+        android:layout_alignTop="@+id/kotaiti_DEF"
+        android:layout_alignBottom="@+id/kotaiti_DEF"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:id="@+id/doryokuti_SATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doryokuti_DEF"
+        android:layout_alignRight="@+id/doryokuti_DEF"
+        android:layout_alignTop="@+id/kotaiti_SATK"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_alignBottom="@+id/kotaiti_SATK"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:id="@+id/doryokuti_SDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kotaiti_SDEF"
+        android:layout_alignLeft="@+id/doryokuti_SATK"
+        android:layout_alignRight="@+id/doryokuti_SATK"
+        android:layout_alignTop="@+id/kotaiti_SDEF"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doryokuti_SPE"
+        android:layout_alignLeft="@+id/doryokuti_SDEF"
+        android:layout_alignRight="@+id/doryokuti_SDEF"
+        android:layout_alignTop="@+id/kotaiti_SPE"
+        android:background="@drawable/waku"
+        android:text="0"
+        android:layout_alignBottom="@+id/kotaiti_SPE"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ポケモン名"
+        android:id="@+id/pokemon_name"
+        android:background="@drawable/waku"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginBottom="2dp"
+        android:layout_alignRight="@+id/space2" />
+
+    <Spinner
+        android:id="@+id/seikaku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:entries="@array/seikaku"
+        android:text="0"
+        android:layout_above="@+id/space"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/pokemon_name"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:text="50"
+        android:layout_below="@+id/seikaku"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/doryokuti_HP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="算出"
+        android:id="@+id/button1"
+        android:layout_below="@+id/textView12"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true">>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="HP"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="攻撃"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="防御"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="特攻"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="特防"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#003366"
+                    android:gravity="center"
+                    android:text="素早"
+                    android:textColor="#FFFFFF" />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000"
+                android:stretchColumns="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="ー"
+                    android:textColor="#000000"
+                    android:id="@+id/kekka_HP" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="ー"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/kekka_ATK" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="ー"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:id="@+id/kekka_DEF" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="ー"
+                    android:textColor="#000000"
+                    android:id="@+id/kekka_SATK" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="ー"
+                    android:textColor="#000000"
+                    android:id="@+id/kekka_SDEF" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="ー"
+                    android:textColor="#000000"
+                    android:id="@+id/kekka_SPE" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/seikaku"
+        android:id="@+id/space"
+        android:layout_marginBottom="2dp" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space2"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_marginLeft="56dp" />
+    
+  <!-- XMLレイアウトで実装 -->
+
+<RelativeLayout 
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+</RelativeLayout>
+
+    
+
+</RelativeLayout>

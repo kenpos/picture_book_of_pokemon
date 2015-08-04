@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="種族値検索　"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff8f77"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="種族値を入力してください"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="攻撃"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="防御"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/TextView02"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特攻"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/TextView03"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/waku"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView02"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignBottom="@+id/TextView01">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/waku"
+        android:layout_toRightOf="@+id/TextView02"
+        android:layout_alignTop="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_toLeftOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/waku"
+        android:layout_alignTop="@+id/TextView03"
+        android:layout_toRightOf="@+id/TextView03"
+        android:layout_toLeftOf="@+id/radioGroup3"
+        android:layout_alignBottom="@+id/TextView03" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/waku"
+        android:layout_alignTop="@+id/TextView04"
+        android:layout_toRightOf="@+id/TextView04"
+        android:layout_toLeftOf="@+id/radioGroup4"
+        android:layout_alignBottom="@+id/TextView04" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_alignTop="@+id/TextView05"
+        android:layout_toRightOf="@+id/TextView05"
+        android:layout_toLeftOf="@+id/radioGroup5"
+        android:layout_alignBottom="@+id/TextView05" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/waku"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/TextView06"
+        android:layout_toLeftOf="@+id/radioGroup4"
+        android:layout_alignTop="@+id/TextView06"
+        android:layout_alignBottom="@+id/TextView06" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:layout_above="@+id/TextView02">
+
+
+        <RadioButton
+            android:id="@+id/radioButton18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/editText3"
+            android:layout_toRightOf="@+id/editText2"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/radioButton1"
+            android:layout_toRightOf="@+id/radioButton1"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton6"
+            android:layout_alignLeft="@+id/radioButton13" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_above="@+id/TextView03">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/editText3"
+            android:layout_toRightOf="@+id/editText2"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_alignLeft="@+id/radioButton6" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton7"
+            android:layout_toRightOf="@+id/radioButton7" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_above="@+id/TextView04">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/editText4"
+            android:layout_toRightOf="@+id/editText3"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton2"
+            android:layout_alignLeft="@+id/radioButton7" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton8"
+            android:layout_toRightOf="@+id/radioButton8" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_above="@+id/TextView05">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/editText3"
+            android:layout_toRightOf="@+id/editText4"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_below="@+id/radioButton8"
+            android:layout_alignLeft="@+id/radioButton8" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_below="@+id/radioButton8"
+            android:layout_toRightOf="@+id/radioButton9" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_alignLeft="@+id/radioGroup6"
+        android:layout_above="@+id/TextView06">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/editText6"
+            android:layout_toRightOf="@+id/editText5"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton4"
+            android:layout_toRightOf="@+id/radioButton4" />
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton10"
+            android:layout_toRightOf="@+id/radioButton10" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/editText6"
+        android:layout_toRightOf="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同じ"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/button1"
+            android:layout_toRightOf="@+id/editText6"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以上"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_above="@+id/button1"
+            android:layout_alignLeft="@+id/radioButton10" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton11"
+            android:layout_toRightOf="@+id/radioButton11" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="検索"
+        android:layout_below="@+id/radioGroup6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/radioGroup6"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="素早"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/TextView05"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特防"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/TextView04"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+  <!-- XMLレイアウトで実装 -->
+
+<RelativeLayout 
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+</RelativeLayout>
+
+
+</RelativeLayout>
