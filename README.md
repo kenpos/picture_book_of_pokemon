@@ -1,0 +1,3 @@
+# picture_book_of_pokemon
+Android用ポケモン図鑑アプリ
+画像データは抜いてあるので各自で用意してください．
